@@ -22,8 +22,8 @@ let checkDead = setInterval(() => {
     if (blockLeft<60 && blockLeft>-60 && characterTop>=120) {
         block.style.animation = "none";
         block.style.animation = "none";        
+        alert("Congrats, "+Math.floor(counter/100) + " presents were delivered");        
         counter=0;
-        alert("Congrats, "+Math.floor(counter/100) + " presents were delivered");
         window.location.reload();
 
     } else{
