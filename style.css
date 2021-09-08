@@ -4,10 +4,14 @@ body {
 }
 
 .game {
-    width: 800px;
+    width: 100%;
     height: 200px;
     border: 1px solid black;
+    background: url(aline-costa-neve.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
+
 
 img {
     width: 80px;
@@ -23,7 +27,7 @@ img {
     background-color: blue;
     position: relative;
     top: 95px;
-    left: 760px;
+    left: 99%;
     animation: block 2s infinite linear;
 }
 
@@ -32,8 +36,8 @@ img {
 }
 
 @keyframes block {
-    0% {left: 760px;}
-    100% {left: -40px;}
+    0% {left: 100%;}
+    100% {left: 0%}
 }
 
 @keyframes jump {
@@ -41,4 +45,38 @@ img {
     20% {top: 50px}
     80% {top: 50px}
     100% {top:120px}
+}
+
+body {
+    background-color: black;
+    
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+.umu2 {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+.restart {
+    display: flex;
+    justify-content: center;
+
+}
+
+button {
+    margin-top: 10px;
+    height: 40px;
+    width: 200px;
+    border-radius: 60px;
 }
