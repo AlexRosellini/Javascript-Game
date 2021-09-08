@@ -1,0 +1,44 @@
+body {
+    padding : 0;
+    margin: 0;
+}
+
+.game {
+    width: 800px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    position: relative;
+    top: 120px;
+}
+
+.block {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 95px;
+    left: 760px;
+    animation: block 2s infinite linear;
+}
+
+.animate {
+    animation: jump 500ms; 
+}
+
+@keyframes block {
+    0% {left: 760px;}
+    100% {left: -40px;}
+}
+
+@keyframes jump {
+    0% {top: 120px}
+    20% {top: 50px}
+    80% {top: 50px}
+    100% {top:120px}
+}
