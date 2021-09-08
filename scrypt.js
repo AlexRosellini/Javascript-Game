@@ -10,6 +10,8 @@ if (character.classList != "animate") {
 setTimeout(function () {
     character.classList.remove("animate");
 },500)
+let audio = new Audio("umu.mp3")
+audio.play();
 })
 
 let checkDead = setInterval(() => {
