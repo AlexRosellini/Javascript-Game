@@ -22,12 +22,12 @@ let checkDead = setInterval(() => {
     if (blockLeft<60 && blockLeft>-60 && characterTop>=120) {
         block.style.animation = "none";
         block.style.animation = "none";        
-        alert("Congrats, "+Math.floor(counter/100) + " presents were delivered");        
+        alert("Congrats, "+Math.floor(counter/200) + " presents were delivered");        
         counter=0;
         window.location.reload();
 
     } else{
         counter++;
-        document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
+        document.getElementById("scoreSpan").innerHTML = Math.floor(counter/200);
     }
 })
