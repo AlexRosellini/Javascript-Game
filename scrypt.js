@@ -2,11 +2,6 @@ const character = document.querySelector(".umu");
 const block = document.querySelector(".block")
 let counter=0;
 let game = document.querySelector(".game");
-let button = document.querySelector(".button")
-
-button.addEventListener("click", (event) => {
-    window.location.reload();
-})
 
 document.addEventListener("click", (event) => { 
 if (character.classList != "animate") {
@@ -26,9 +21,11 @@ let checkDead = setInterval(() => {
     let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     if (blockLeft<60 && blockLeft>-60 && characterTop>=120) {
         block.style.animation = "none";
-        block.style.animation = "none";
-        alert("Congrats, "+Math.floor(counter/100) + " presents were delivered");
+        block.style.animation = "none";        
         counter=0;
+        alert("Congrats, "+Math.floor(counter/100) + " presents were delivered");
+        window.location.reload();
+
     } else{
         counter++;
         document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
